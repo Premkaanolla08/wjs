@@ -1,9 +1,6 @@
 <style>
     .card {
-        display:flex;
-        flex-direction: row;
-        justify-self: center;
-        height: 500px;
+        height: 520px;
         width: 302px;
         background-color: white;
         box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -15,51 +12,57 @@
         transition-duration: 350ms;
         transition-timing-function: ease;
     }
-    .card:hover {
+     .card:hover {
         transform: translateY(-8px);
     }
-    .wtapp-img {
+    .img1 {
         height: 200px;
-        width: 299px;
+        width: 300px;
         object-fit: fill;
         border-radius: 0.4rem;
-        
     }
-    .wtapp-heading {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,300px);
+        gap: 20px;
+        justify-content: center;
+    }
+    .heading {
         text-align: center;
-        font-family: "Poppins", sans-serif;
-
+        font-family: "Poppins";
     }
-    .wtapp-sub {
+    .sub {
         padding-left: 10px;
         width:280px;
         font-family: "Poppins";
+
     }
-    .wtapp-link {
+    .a-link {
         font-family: "Poppins";
-         padding-left: 10px;
+        padding-left: 10px;
     }
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
+  <title>Grid</title>
   <!-- Linking Google fonts for icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap")/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <head>
     <body>
-       <div class="card">
-        <div>
-            <img class="wtapp-img" src="3d-partly-cloudy-sun-icon_543381-106.jpg">
-            <h2 class="wtapp-heading">Weather App</h2>
-            <p class="wtapp-sub">A weather report provides information about current and predicted atmospheric conditions, including temperature, humidity, wind, and precipitation, to help people make informed decisions about their daily activities.</p>
-            <a class="wtapp-link" href="https://premkaanolla08.github.io/WeatherApp-Project/">Click</a>
+       <div class="grid-container">
+        <div class="card">
+          <img class="img1" src="d:\Prem Projects\Projects\Weather App\gemini_ai_1735298869742.webp">
+          <h2 class="heading">JavaScript Projects</h2>
+          <p class="sub">A weather report provides information about current and predicted atmospheric conditions, including temperature, humidity, wind, and precipitation, to help people make informed decisions about their daily activities.</p>
+          <a class="a-link"href="https://premkaanolla08.github.io/WeatherApp-Project/">Click</a>
         </div>
-        </div>
+       </div>
     </body>
   </head>
